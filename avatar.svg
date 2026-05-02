@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Main gradient for initials -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4aa"/>
+      <stop offset="100%" stop-color="#58a6ff"/>
+    </linearGradient>
+    <!-- Subtle glow -->
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4aa" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#00d4aa" stop-opacity="0.15"/>
+    </linearGradient>
+    <!-- Border gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4aa" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.6"/>
+    </linearGradient>
+    <!-- Clip for rounded rect -->
+    <clipPath id="roundClip">
+      <rect x="0" y="0" width="500" height="500" rx="96" ry="96"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background: dark navy with gradient -->
+  <g clip-path="url(#roundClip)">
+    <rect width="500" height="500" fill="#0d1117" rx="96" ry="96"/>
+
+    <!-- Subtle radial glow behind initials -->
+    <ellipse cx="250" cy="250" rx="180" ry="180" fill="url(#glowGrad)"/>
+
+    <!-- Faint grid pattern for tech feel -->
+    <g stroke="#58a6ff" stroke-opacity="0.04" stroke-width="1">
+      <line x1="100" y1="0" x2="100" y2="500"/>
+      <line x1="150" y1="0" x2="150" y2="500"/>
+      <line x1="200" y1="0" x2="200" y2="500"/>
+      <line x1="250" y1="0" x2="250" y2="500"/>
+      <line x1="300" y1="0" x2="300" y2="500"/>
+      <line x1="350" y1="0" x2="350" y2="500"/>
+      <line x1="400" y1="0" x2="400" y2="500"/>
+      <line x1="0" y1="100" x2="500" y2="100"/>
+      <line x1="0" y1="150" x2="500" y2="150"/>
+      <line x1="0" y1="200" x2="500" y2="200"/>
+      <line x1="0" y1="250" x2="500" y2="250"/>
+      <line x1="0" y1="300" x2="500" y2="300"/>
+      <line x1="0" y1="350" x2="500" y2="350"/>
+      <line x1="0" y1="400" x2="500" y2="400"/>
+    </g>
+
+    <!-- Decorative code brackets -->
+    <g font-family="'Courier New', monospace" font-weight="700" fill="none" stroke="url(#accentGrad)" stroke-width="2.5" opacity="0.3">
+      <text x="72" y="268" font-size="72">&lt;/</text>
+      <text x="376" y="268" font-size="72">&gt;</text>
+    </g>
+
+    <!-- Main initials "AM" -->
+    <!-- A -->
+    <g transform="translate(105, 138)">
+      <!-- A body -->
+      <polygon points="68,224 0,0 22,0 68,166 114,0 136,0 68,224"
+               fill="url(#accentGrad)" fill-rule="nonzero"/>
+      <!-- A crossbar -->
+      <rect x="22" y="148" width="92" height="14" rx="3" fill="url(#accentGrad)"/>
+    </g>
+
+    <!-- M -->
+    <g transform="translate(258, 138)">
+      <polygon points="0,224 0,0 24,0 70,142 116,0 140,0 140,224 118,224 118,52 74,178 66,178 22,52 22,224"
+               fill="url(#accentGrad)" fill-rule="nonzero"/>
+    </g>
+
+    <!-- Bottom accent line -->
+    <rect x="170" y="400" width="160" height="3" rx="1.5" fill="url(#accentGrad)" opacity="0.5"/>
+
+    <!-- Top accent line -->
+    <rect x="210" y="100" width="80" height="2.5" rx="1.25" fill="url(#accentGrad)" opacity="0.3"/>
+  </g>
+
+  <!-- Border -->
+  <rect x="0" y="0" width="500" height="500" rx="96" ry="96" fill="none" stroke="url(#borderGrad)" stroke-width="3"/>
+</svg>
