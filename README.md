@@ -37,9 +37,9 @@ Software Engineer from Brazil, focused on building reliable software with clean 
 
 <div align="center">
 
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=amonmelo&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+  <img height="170" src="https://readme-stats-mauve.vercel.app/api?username=amonmelo&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="GitHub Stats" />
   &nbsp;&nbsp;
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amonmelo&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+  <img height="170" src="https://readme-stats-mauve.vercel.app/api/top-langs/?username=amonmelo&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Top Languages" />
 
 </div>
 
